@@ -1,0 +1,5 @@
+.editor-group-watermark > .letterpress {
+  background-image: url("https://raw.githubusercontent.com/phamhuulocforwork/phamhuulocforwork/main/logos/Logo.png") !important;
+  opacity: 0.75;
+  aspect-ratio: 3/2 !important;
+}
