@@ -25,4 +25,4 @@
 
 ### Contribution
 
-![Snake animation](https://raw.githubusercontent.com/phamhuulocforwork/phamhuulocforwork/output/github-contribution-grid-snake.svg)
+![Snake animation](https://raw.githubusercontent.com/phamhuulocforwork/phamhuulocforwork/output/github-contribution-grid-snake-dark.svg)
