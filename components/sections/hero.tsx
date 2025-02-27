@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 
 const Hero = () => {
   return (
-    <div className='min-h-[calc(100vh-4rem)] w-full flex items-center justify-center overflow-hidden border-b border-accent'>
+    <div className='min-h-screen w-full flex items-center justify-center overflow-hidden border-b border-accent'>
       <div className='max-w-screen-xl w-full flex flex-col lg:flex-row mx-auto items-center justify-between gap-y-14 gap-x-10 px-6 py-12 lg:py-0'>
         <div className='max-w-xl'>
           <Badge className='rounded-full py-1 border-none'>
