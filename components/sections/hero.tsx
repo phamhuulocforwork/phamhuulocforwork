@@ -19,14 +19,15 @@ const Hero = () => {
             Pham Huu Loc
           </h1>
           <p className='mt-6 max-w-[60ch] xs:text-lg'>
-            I&apos;m currently studying at University, focusing on web development and graphic design. 
-            I&apos;m passionate about exploring new technologies and building interesting projects. 
-            My goal is to become a full-stack developer.
+            I&apos;m currently studying at University, focusing on web
+            development and graphic design. I&apos;m passionate about exploring
+            new technologies and building interesting projects. My goal is to
+            become a full-stack developer.
           </p>
         </div>
         <div className='relative lg:max-w-lg xl:max-w-xl w-full bg-accent rounded-xl aspect-square'>
           <Image
-            src='https://github.com/phamhuulocforwork.png'
+            src='/me.jpg'
             fill
             alt='@phamhuulocforwork'
             className='object-cover rounded-xl'

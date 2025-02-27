@@ -1,14 +1,41 @@
 import type { Metadata } from "next";
 
-import { ThemeProvider } from "next-themes";
-
 import { Inter } from "next/font/google";
+
+import { ThemeProvider } from "next-themes";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  title: "Pham Huu Loc - Portfolio",
+  description: "Pham Huu Loc - Portfolio",
+  keywords: [
+    "Pham Huu Loc",
+    "Portfolio",
+    "Web Developer",
+    "Graphic Designer",
+    "Full-Stack Developer",
+    "Software Engineer",
+    "Web Developer",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "Pham Huu Loc - Portfolio",
+    locale: "en_US",
+    url: "https://phamhuulocforwork.vercel.app",
+    title: "Pham Huu Loc - Portfolio",
+    description: "Pham Huu Loc - Portfolio",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Pham Huu Loc - Portfolio Preview",
+      },
+    ],
+  },
   authors: [
     {
       name: "Pham Huu Loc",
