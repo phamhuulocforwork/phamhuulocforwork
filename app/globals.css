@@ -59,6 +59,21 @@
 }
 
 @layer base {
+  ::-webkit-scrollbar-thumb {
+    @apply bg-transparent shadow-sm;
+  }
+  ::-webkit-scrollbar {
+    @apply h-1.5 w-1.5 bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-slate-300;
+  }
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
   * {
     @apply border-border outline-ring/50;
   }
