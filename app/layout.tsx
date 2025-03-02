@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 
 import { ThemeProvider } from "next-themes";
 
+import { ScrollToTop } from "@/components/scroll-to-top";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -95,6 +97,7 @@ export default function RootLayout({
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
         </ThemeProvider>
+        <ScrollToTop />
       </body>
     </html>
   );

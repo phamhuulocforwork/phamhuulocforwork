@@ -10,6 +10,9 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    listStyleType: {
+      square: 'square',
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",

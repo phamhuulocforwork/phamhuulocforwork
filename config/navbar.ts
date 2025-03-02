@@ -16,4 +16,8 @@ export const navItems: NavItem[] = [
     label: "Blogs",
     href: "#blogs",
   },
+  {
+    label: "Skills",
+    href: "#skills",
+  },
 ];

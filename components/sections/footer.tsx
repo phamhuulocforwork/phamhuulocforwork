@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { FacebookIcon, GithubIcon } from "lucide-react";
+import { Facebook, Github, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -14,11 +14,14 @@ const Footer = () => {
         </span>
 
         <div className='flex items-center gap-5 text-muted-foreground'>
+          <Link href='mailto:phamhuulocforwork@gmail.com' target='_blank'>
+            <Mail className='!w-5 !h-5' />
+          </Link>
           <Link href='https://www.facebook.com/phamhuuloc2003' target='_blank'>
-            <FacebookIcon className='h-5 w-5' />
+            <Facebook className='!w-5 !h-5' />
           </Link>
           <Link href='https://github.com/phamhuulocforwork' target='_blank'>
-            <GithubIcon className='h-5 w-5' />
+            <Github className='!w-5 !h-5' />
           </Link>
         </div>
       </div>
