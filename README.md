@@ -1,10 +1,4 @@
-<!-- <div align='center'>
-  <br />
-    <a href="#" target="_blank">
-      <img src="" alt="Profile Banner">
-    </a>
-  <br />
-</div> -->
+![Banner](https://raw.githubusercontent.com/phamhuulocforwork/phamhuulocforwork/refs/heads/main/public/banner.svg)
 
 <div align="left">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=800&duration=3000&pause=1000&width=435&lines=Hi+%E2%9C%8C%EF%B8%8F%2C+I'm+Loc;Welcome+to+my+GitHub+profile!+%F0%9F%98%89" />
