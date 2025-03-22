@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
+import { notFound } from "next/navigation";
 
+import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { ThemeProvider } from "next-themes";
 
+import { Navbar } from "@/components/blocks/navbar";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
-import "./globals.css";
+import "@/styles/globals.css";
+
+import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +27,17 @@ export const metadata: Metadata = {
     "Software Engineer",
     "Web Developer",
   ],
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "vi-VN": "/vi-VN",
+    },
+  },
   openGraph: {
     type: "website",
     siteName: "Pham Huu Loc - Portfolio",
-    locale: "en_US",
+    locale: "vi_VN",
     url: "https://phamhuulocforwork.vercel.app",
     title: "Pham Huu Loc - Portfolio",
     description: "Pham Huu Loc - Portfolio",
@@ -86,18 +98,27 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-          {children}
-        </ThemeProvider>
-        <ScrollToTop />
+        <NextIntlClientProvider>
+          <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+            <Navbar />
+            {children}
+          </ThemeProvider>
+          <ScrollToTop />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
