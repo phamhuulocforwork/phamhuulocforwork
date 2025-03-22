@@ -6,8 +6,8 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { ThemeProvider } from "next-themes";
 
-import { Navbar } from "@/components/blocks/navbar";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 import "@/styles/globals.css";
 
@@ -114,8 +114,7 @@ export default async function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <NextIntlClientProvider>
           <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-            <Navbar />
-            {children}
+            <TooltipProvider>{children}</TooltipProvider>
           </ThemeProvider>
           <ScrollToTop />
         </NextIntlClientProvider>

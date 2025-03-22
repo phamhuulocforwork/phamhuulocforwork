@@ -1,1 +1,7 @@
-{}
+{
+  "curriculum": {
+    "education": "Education",
+    "experiences": "Experiences",
+    "projects": "Projects"
+  }
+}

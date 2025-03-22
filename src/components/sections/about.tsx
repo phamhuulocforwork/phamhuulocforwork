@@ -1,17 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { Facebook, Github, Mail } from "lucide-react";
-import { useLocale } from "next-intl";
 
 import { useLocalizedContent } from "@/components/hooks/use-localized-content";
 import { Button } from "@/components/ui/button";
 
+import { Link } from "@/i18n/navigation";
 import { registryAbout } from "@/registry";
 
 const About = () => {
-  const locale = useLocale();
-
   const calculateAge = (birthdate: string) => {
     const birthDate =
       typeof birthdate === "string"
@@ -38,8 +35,8 @@ const About = () => {
   const getContent = useLocalizedContent(registryAbout);
 
   return (
-    <section className='w-full min-h-[calc(100vh-4rem)] mt-16 container p-4 sm:px-6 flex flex-col lg:flex-row mx-auto items-center justify-between gap-y-14 gap-x-10'>
-      <div className='max-w-xl'>
+    <section className='w-full min-h-[calc(100vh-4rem)] mt-16 container p-8 flex flex-col lg:flex-row items-center justify-between gap-y-8 gap-x-8'>
+      <div className='w-full'>
         <span className='block text-muted-foreground'>
           {getContent("greeting")}
         </span>
@@ -53,8 +50,8 @@ const About = () => {
           {getContent("description")}
         </p>
         <div className='mt-6 flex gap-2 items-center'>
-          <Link href='/resume.pdf' target='_blank'>
-            <Button>{getContent("resume")}</Button>
+          <Link href='/curriculum' target='_blank'>
+            <Button>{getContent("curriculum")}</Button>
           </Link>
           <Link href='mailto:phamhuulocforwork@gmail.com' target='_blank'>
             <Button variant='ghost' size='icon'>
