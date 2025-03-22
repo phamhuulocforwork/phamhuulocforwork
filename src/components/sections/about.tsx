@@ -31,11 +31,11 @@ const About = () => {
   };
 
   const age = calculateAge("28/10/2003");
-
+  
   const getContent = useLocalizedContent(registryAbout);
 
   return (
-    <section className='w-full min-h-[calc(100vh-4rem)] mt-16 container p-8 flex flex-col lg:flex-row items-center justify-between gap-y-8 gap-x-8'>
+    <section className='w-full min-h-[calc(100vh-4rem)] mt-16 container p-8 flex flex-col lg:flex-row items-center justify-between mx-auto gap-y-8 gap-x-8'>
       <div className='w-full'>
         <span className='block text-muted-foreground'>
           {getContent("greeting")}
