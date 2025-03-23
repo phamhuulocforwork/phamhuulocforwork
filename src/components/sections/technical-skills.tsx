@@ -96,13 +96,36 @@ const TechnicalSkills: React.FC = () => {
               {category.title}
             </h3>
             <div className='flex flex-wrap gap-2'>
-              <ul className='list-[square] pl-5'>
-                {category.skills.map((skill, skillIndex) => (
-                  <li key={skillIndex} className='text-sm'>
-                    {skill}
-                  </li>
-                ))}
-              </ul>
+              {category.skills.length > 10 ? (
+                <div className='grid grid-cols-2 w-full gap-4'>
+                  <ul className='list-[square] pl-5'>
+                    {category.skills
+                      .slice(0, Math.ceil(category.skills.length / 2))
+                      .map((skill, skillIndex) => (
+                        <li key={skillIndex} className='text-sm'>
+                          {skill}
+                        </li>
+                      ))}
+                  </ul>
+                  <ul className='list-[square] pl-5'>
+                    {category.skills
+                      .slice(Math.ceil(category.skills.length / 2))
+                      .map((skill, skillIndex) => (
+                        <li key={skillIndex} className='text-sm'>
+                          {skill}
+                        </li>
+                      ))}
+                  </ul>
+                </div>
+              ) : (
+                <ul className='list-[square] pl-5'>
+                  {category.skills.map((skill, skillIndex) => (
+                    <li key={skillIndex} className='text-sm'>
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         ))}
