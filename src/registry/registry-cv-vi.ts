@@ -6,7 +6,7 @@ export const registryCvVi = {
   links: {
     github: "https://github.com/phamhuulocforwork",
   },
-  updated_at: "Update at ...",
+  updated_at: "Last updated on ...",
   bio: "Bio",
   education: [
     {
