@@ -1,5 +1,8 @@
+"use client";
+
 import { Navbar } from "@/components/blocks/navbar";
 import About from "@/components/sections/about";
+import Contribution from "@/components/sections/contribution";
 import Footer from "@/components/sections/footer";
 import TechnicalSkills from "@/components/sections/technical-skills";
 
@@ -9,6 +12,7 @@ export default function Home() {
       <Navbar />
       <About />
       <TechnicalSkills />
+      <Contribution />
       <Footer />
     </>
   );
