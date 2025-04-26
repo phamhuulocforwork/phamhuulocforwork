@@ -14,7 +14,7 @@
 ### Tech Stack
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=ts,tailwind,react,nextjs,postman,dotnet,nodejs,docker,godot,git,prisma,mysql,c,cpp,figma,ae,ai,ps,pr" />
+  <img src="https://skillicons.dev/icons?i=ts,tailwind,react,redux,nextjs,postman,dotnet,nodejs,fastapi,docker,godot,git,prisma,mongodb,mysql,c,cpp,figma,ae,ai,ps,pr,blender" />
 </div>
 
 ### Contribution
