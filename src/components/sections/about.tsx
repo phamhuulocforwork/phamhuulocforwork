@@ -31,7 +31,7 @@ const About = () => {
   };
 
   const age = calculateAge("28/10/2003");
-  
+
   const getContent = useLocalizedContent(registryAbout);
 
   return (
@@ -72,7 +72,7 @@ const About = () => {
       </div>
       <div className='relative max-w-lg w-full shadow-md hover:shadow-xl transition-all duration-300 bg-accent rounded-xl aspect-square'>
         <Image
-          src='/me.jpg'
+          src='https://github.com/phamhuulocforwork.png'
           fill
           alt='@phamhuulocforwork'
           className='object-cover rounded-xl'
