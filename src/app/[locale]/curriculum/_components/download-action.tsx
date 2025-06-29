@@ -16,9 +16,6 @@ export const DownloadAction = ({ className }: { className?: string }) => {
     setTheme("light");
     setTimeout(() => {
       window.print();
-      setTimeout(() => {
-        setTheme("system");
-      }, 1);
     }, 100);
   };
 
