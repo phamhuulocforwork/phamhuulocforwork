@@ -133,3 +133,19 @@
     --radius: 0.5rem;
   }
 }
+
+@media print {
+  * {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  ul {
+    list-style-type: square !important;
+  }
+
+  ul li {
+    visibility: visible !important;
+  }
+}

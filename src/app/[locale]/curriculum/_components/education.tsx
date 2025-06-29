@@ -12,7 +12,7 @@ export default function Education() {
       <h1 className='my-0 text-xl font-semibold print:text-lg'>
         {t("education")}
       </h1>
-      <ul className='ml-6 mt-2 space-y-1.5 list-[square]'>
+      <ul className='ml-6 mt-2 space-y-1.5 print:list-[square]'>
         {(getContent("education") as any[]).map((edu) => (
           <li
             key={edu.id}

@@ -21,7 +21,7 @@ export default function Experiences() {
               {exp.date}
             </strong>
             <div className='relative flex flex-col w-full pl-8'>
-              <hr className='pb-3.5 print:hidden' />
+              <hr className='pb-3.5' />
               <div className='flex items-start justify-between gap-0.5'>
                 <div className='flex flex-col text-primary'>
                   <strong>{exp.title}</strong>
