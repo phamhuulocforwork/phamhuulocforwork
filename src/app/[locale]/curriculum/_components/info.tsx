@@ -38,7 +38,7 @@ export default function Info() {
           {getContent("updated_at")}
         </span>
       </div>
-      <p className='mb-0 mt-2 font-normal text-sm print:mt-1 leading-6'>
+      <p className='mb-0 mt-2 font-normal text-sm print:mt-1 leading-6 text-justify'>
         {getContent("bio")}
       </p>
     </div>

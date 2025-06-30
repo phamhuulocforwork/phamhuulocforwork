@@ -24,7 +24,15 @@ export default function Project() {
               <hr className='pb-3.5' />
               <div className='flex items-start justify-between gap-0.5'>
                 <div className='flex flex-col text-primary'>
-                  <strong>{project.title}</strong>
+                  <strong>
+                    <a
+                      className='after:content-["_↗"] hover:underline'
+                      href={project.github}
+                      target='_blank'
+                    >
+                      {project.title}
+                    </a>
+                  </strong>
                 </div>
                 <span className='text-right font-medium text-sm'>
                   {project.role}

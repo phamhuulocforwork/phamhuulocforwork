@@ -8,7 +8,7 @@ import Info from "./_components/info";
 import Project from "./_components/project";
 
 export const metadata = {
-  title: "CV - Pham Huu Loc",
+  title: "CV-PhamHuuLoc-FE-Intern",
   alternates: {
     canonical: "/curriculum",
   },

@@ -2,7 +2,7 @@ import { HTMLAttributes } from "react";
 
 import Link, { type LinkProps } from "next/link";
 
-import { ExternalLinkIcon } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -32,7 +32,7 @@ export const ExternalLink = ({
       )}
     >
       {children}
-      {icon && <ExternalLinkIcon size={17} />}
+      {icon && <ArrowUpRight size={17} />}
     </Link>
   );
 };
