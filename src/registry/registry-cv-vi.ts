@@ -1,6 +1,6 @@
 export const registryCvVi = {
   role: "Web Developer",
-  name: "Pham Huu Loc",
+  name: "Phạm Hữu Lộc",
   phone: "(+84) 355-443-403",
   email: "phamhuulocforwork@gmail.com",
   links: {
