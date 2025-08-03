@@ -3,6 +3,7 @@
 import { Navbar } from "@/components/blocks/navbar";
 import About from "@/components/sections/about";
 import Footer from "@/components/sections/footer";
+import GithubCal from "@/components/sections/github-cal";
 import TechnicalSkills from "@/components/sections/technical-skills";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <About />
       <TechnicalSkills />
+      <GithubCal />
       <Footer />
     </>
   );
