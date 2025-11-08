@@ -4,7 +4,10 @@ import { useTranslations } from "next-intl";
 
 import { useLocalizedContent } from "@/components/hooks/use-localized-content";
 
+import type { Project } from "@/types/cv.types";
+
 import { registryCv } from "@/registry";
+import { ExternalLink } from "./external-link";
 
 export default function Project() {
   const getContent = useLocalizedContent(registryCv);
@@ -15,7 +18,7 @@ export default function Project() {
         {t("projects")}
       </h1>
       <ul className='ml-6 mt-2'>
-        {(getContent("projects") as any[]).map((project) => (
+        {(getContent("projects") as Project[]).map((project) => (
           <li key={project.id} className='mt-3 flex items-start print:mt-1'>
             <strong className='min-w-14 pt-3.5 text-sm print:pt-0'>
               {project.date}
@@ -23,15 +26,14 @@ export default function Project() {
             <div className='relative flex flex-col w-full pl-8'>
               <hr className='pb-3.5' />
               <div className='flex items-start justify-between gap-0.5'>
-                <div className='flex flex-col text-primary'>
+                <div className='flex flex-col'>
                   <strong>
-                    <a
-                      className='after:content-["_↗"] hover:underline'
+                    <ExternalLink
+                      className='text-primary hover:underline'
                       href={project.github}
-                      target='_blank'
                     >
                       {project.title}
-                    </a>
+                    </ExternalLink>
                   </strong>
                 </div>
                 <span className='text-right font-medium text-sm'>

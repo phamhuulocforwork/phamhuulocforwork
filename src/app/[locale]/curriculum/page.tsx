@@ -1,6 +1,7 @@
 import LanguageToggle from "@/components/language-toggle";
 import ThemeToggle from "@/components/theme-toggle";
 
+import Certificate from "./_components/certificate";
 import { DownloadAction } from "./_components/download-action";
 import Education from "./_components/education";
 import Experiences from "./_components/experiences";
@@ -25,6 +26,7 @@ export default function Curriculum() {
 
       <Info />
       <Education />
+      <Certificate />
       <Project />
       <Experiences />
     </div>

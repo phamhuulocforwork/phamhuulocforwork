@@ -4,18 +4,20 @@ import { useTranslations } from "next-intl";
 
 import { useLocalizedContent } from "@/components/hooks/use-localized-content";
 
+import type { Experience, ExperienceProject } from "@/types/cv.types";
+
 import { registryCv } from "@/registry";
 
 export default function Experiences() {
   const getContent = useLocalizedContent(registryCv);
   const t = useTranslations("curriculum");
   return (
-    <div className='mt-6 h-auto max-w-full print:mt-0'>
+    <div className='mt-6 h-auto max-w-full print:mt-0 print:break-before-page'>
       <h1 className='my-0 text-xl font-semibold print:text-lg'>
         {t("experiences")}
       </h1>
       <ul className='ml-6 mt-2'>
-        {(getContent("experiences") as any[]).map((exp) => (
+        {(getContent("experiences") as Experience[]).map((exp) => (
           <li key={exp.id} className='mt-3 flex items-start print:mt-1'>
             <strong className='min-w-14 pt-3.5 text-sm print:pt-0'>
               {exp.date}
@@ -39,11 +41,11 @@ export default function Experiences() {
                 </p>
                 {exp.projects && (
                   <div className='my-2 pl-4'>
-                    <ul className='list-disc space-y-1.5'>
-                      {exp.projects.map((project: any) => (
+                    <ul className='list-disc space-y-2.5'>
+                      {exp.projects.map((project: ExperienceProject) => (
                         <li key={project.id} className='flex'>
                           <p className='mb-0 font-light leading-tight text-sm'>
-                            <strong className='font-medium text-primary'>
+                            <strong className='font-semibold text-primary'>
                               - {project.label}
                               {": "}
                             </strong>

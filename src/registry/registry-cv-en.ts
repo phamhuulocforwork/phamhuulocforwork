@@ -1,25 +1,36 @@
-export const registryCvEn = {
-  role: "FE Intern Developer",
+import type { CvRegistry } from "@/types/cv.types";
+
+export const registryCvEn: CvRegistry = {
+  role: "FE Developer",
   name: "Pham Huu Loc",
   phone: "(+84) 355-443-403",
   email: "phamhuulocforwork@gmail.com",
   links: {
     github: "https://github.com/phamhuulocforwork",
   },
-  updated_at: "Last updated on 29/06/2025",
-  bio: "4th-year Information Technology student seeking opportunities to learn, gain experience, develop skills, and learn from a real working environment.",
+  updated_at: "Last updated on 11/08/2025",
+  bio: "Information Technology student seeking opportunities to learn, gain experience, develop skills, and learn from a real working environment.",
   education: [
     {
       id: crypto.randomUUID(),
       school: "Tra Vinh University",
-      period: "2021 - present",
+      period: "2021 - 2025 ● GPA 3.17/4.0",
       course: "Information Technology",
+    },
+  ],
+  certificates: [
+    {
+      id: crypto.randomUUID(),
+      name: "UX Design Professional Certificate",
+      issuer: "Google",
+      date: "2024",
+      url: "https://coursera.org/verify/professional-cert/HEN60D5H9RJX",
     },
   ],
   projects: [
     {
       id: crypto.randomUUID(),
-      role: "Front-end & UI/UX",
+      role: "Front-end & UI/UX Designer",
       title: "Music Website - Lisicify",
       github: "https://github.com/ddnmanh/Lisicify",
       description:
@@ -59,15 +70,14 @@ export const registryCvEn = {
     {
       id: crypto.randomUUID(),
       role: "Full-stack",
-      title:
-        "Building a mechanism for detecting AI-generated code in programming assignments",
+      title: "Building a mechanism for detecting AI-generated code",
       github:
         "https://github.com/phamhuulocforwork/tn-da21ttb-phamhuuloc-aicodedetect-ml-py",
       description:
         "Developed a mechanism to detect AI-generated code in student programming assignments, applied to student assignment systems.",
       complemention: "",
       work_with: "Technologies used: ",
-      stack: "Next.js, Python, FastAPI, lizard",
+      stack: "Next.js, Python, FastAPI, Lizard",
       date: "05/2025",
     },
   ],
@@ -76,19 +86,44 @@ export const registryCvEn = {
       id: crypto.randomUUID(),
       company: "Anh Quan Technology Co., Ltd (AQTech)",
       locale: "8/24 Nguyen Dinh Khoi, Ward 4, Tan Binh District, HCMC",
-      title: "FE Intern",
+      title: "FE Intern & FE Collaborator",
       description: "Projects completed:",
       projects: [
         {
           id: crypto.randomUUID(),
-          label: "AQ EduSmart",
+          label: "AQ EduLOM",
           description:
-            "Participated in multiple training management solution projects for educational institutions in Vietnam within the AQ EduSmart ecosystem.",
+            "Software system for Managing Learning Outcomes and Accreditation Evidence – Quality improvement to fully meet the requirements of the Ministry of Education and Training according to: Circular 12/2017/TT-BGBDT and Circular 04/2026/TT-BGBDT as well as international accreditation standards such as AUN-QA, ABET, FIBAA,...",
+        },
+        {
+          id: crypto.randomUUID(),
+          label: "AQ EduSTM",
+          description: "System for managing short-term training courses",
+        },
+        {
+          id: crypto.randomUUID(),
+          label: "AQ EduSRM",
+          description:
+            "System for managing the implementation of scientific research activities in educational institutions. Manages and supports teachers' scientific research",
+        },
+        {
+          id: crypto.randomUUID(),
+          label: "AQ EduEAQ",
+          description:
+            "System for Managing Evidence and Supporting Quality Assurance Accreditation Reporting for Educational Institutions.",
+        },
+        {
+          id: crypto.randomUUID(),
+          label: "AQ EduSAE",
+          description:
+            "Manages extracurricular activities and conduct scores for university students.",
         },
       ],
-      complemention: "",
+      complemention:
+        "Successfully contributed to more than 5 enterprise-level education management systems. Accumulated practical experience with the React ecosystem and state management tools in a production environment.",
       work_with: "Technologies used: ",
-      stack: "Next.js, Typescript, Mantine UI, Zustand, Tanstack Query",
+      stack:
+        "Next.js, Typescript, Mantine UI, Zustand, Tanstack Query, Zod, TailwindCSS",
       date: "03/2025 - present",
     },
   ],

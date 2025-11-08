@@ -27,7 +27,7 @@ export const ExternalLink = ({
       rel='noreferrer noopener'
       referrerPolicy='no-referrer'
       className={cn(
-        "inline-flex w-auto text-sm items-center gap-1 break-words text-blue-600 hover:underline dark:text-blue-500",
+        "inline-flex w-auto text-sm items-center gap-1 break-words text-blue-600 hover:underline dark:text-blue-500 ",
         className,
       )}
     >
