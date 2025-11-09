@@ -6,7 +6,6 @@
 
 ### About me
 
-- 🔭 I'm currently studying at University (I stay up late and my hair is getting thinner and thinner. Do you think I'm bald? xD)
 - 🌱 Focus on web development, graphic design, etc. (I know a little about many things, but I'm not good at anything 🤦‍♀️)
 - 💡 Passionate about exploring new technologies and building interesting projects, I'm always interested and eager to learn everything.
 - 🎯 Goal: Become a full-stack developer
@@ -14,7 +13,7 @@
 ### Tech Stack
 
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=ts,tailwind,react,redux,nextjs,postman,dotnet,nodejs,fastapi,docker,godot,git,prisma,mongodb,mysql,c,cpp,figma,ae,ai,ps,pr,blender" />
+  <img src="https://skillicons.dev/icons?i=arch,flutter,ts,tailwind,react,threejs,redux,nextjs,vercel,postman,dotnet,nodejs,express,fastapi,docker,godot,git,gitlab,prisma,mongodb,mysql,c,cpp,figma,ae,ai,ps,pr,blender" />
 </div>
 
 ### Contribution
