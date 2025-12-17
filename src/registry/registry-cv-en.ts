@@ -8,7 +8,7 @@ export const registryCvEn: CvRegistry = {
   links: {
     github: "https://github.com/phamhuulocforwork",
   },
-  updated_at: "Last updated on 11/08/2025",
+  updated_at: "Last updated on 12-01-2025",
   bio: "Information Technology student seeking opportunities to learn, gain experience, develop skills, and learn from a real working environment.",
   education: [
     {
@@ -28,18 +28,6 @@ export const registryCvEn: CvRegistry = {
     },
   ],
   projects: [
-    {
-      id: crypto.randomUUID(),
-      role: "Front-end & UI/UX Designer",
-      title: "Music Website - Lisicify",
-      github: "https://github.com/ddnmanh/Lisicify",
-      description:
-        "Built a website for music listening, playlist management, albums, artists, and genres.",
-      complemention: "",
-      work_with: "Technologies used: ",
-      stack: "Jira, ReactJS, NodeJS (Express)",
-      date: "02/2024",
-    },
     {
       id: crypto.randomUUID(),
       role: "Front-end",
@@ -125,6 +113,54 @@ export const registryCvEn: CvRegistry = {
       stack:
         "Next.js, Typescript, Mantine UI, Zustand, Tanstack Query, Zod, TailwindCSS",
       date: "03/2025 - present",
+    },
+    {
+      id: crypto.randomUUID(),
+      company: "Cloudair Slution",
+      locale:
+        "571/25a Pham Van Bach, Ward 15, Tan Binh District, Ho Chi Minh City",
+      title: "FE Developer",
+      description: "Projects completed:",
+      projects: [
+        {
+          id: crypto.randomUUID(),
+          label: "Survey Management (FE)",
+          description:
+            "The application provides a survey form management and deployment interface, allowing to create/schedule survey sessions.",
+        },
+        {
+          id: crypto.randomUUID(),
+          label: "LMS (FE + UI/UX)",
+          description:
+            "Learning Management System, Participant, Course, Trainer, Calendar, Library management",
+        },
+      ],
+      complemention:
+        "Successfully contributed to more than 5 enterprise-level education management systems. Accumulated practical experience with the React ecosystem and state management tools in a production environment.",
+      work_with: "Technologies used: ",
+      stack:
+        "React, TypeScript, Redux Toolkit, RTK Query, @measured/puck, Material-UI, Vite, React Router, Formik, i18next",
+      date: "10/2025 - present",
+    },
+    {
+      id: crypto.randomUUID(),
+      company: "Diggin DIS., JSC",
+      locale:
+        "A/99 Nguyen Thi Thap Street, Cityland Residential Area, District 7, Ho Chi Minh City",
+      title: "BE Developer",
+      description: "Projects completed:",
+      projects: [
+        {
+          id: crypto.randomUUID(),
+          label: "Digital insurance services",
+          description:
+            "An integrated online solution for businesses, enabling providers to sell insurance and handle claims.",
+        },
+      ],
+      work_with: "Technologies used: ",
+      stack:
+        "Laravel, Redis, MySQL, RESTful API, JWT, Python (AI/ML Integration), FTP/SFTP",
+      date: "12/2025 - present",
     },
   ],
 };

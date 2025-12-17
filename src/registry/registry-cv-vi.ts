@@ -8,7 +8,7 @@ export const registryCvVi: CvRegistry = {
   links: {
     github: "https://github.com/phamhuulocforwork",
   },
-  updated_at: "Cập nhật lần cuối 08/11/2025",
+  updated_at: "Cập nhật lần cuối 01/12/2025",
   bio: "Sinh viên ngành Công nghệ Thông tin tìm kiếm cơ hội học tập, trau dồi kinh nghiệm, phát triển kỹ năng và học hỏi từ môi trường làm việc thực tế.",
   education: [
     {
@@ -28,18 +28,6 @@ export const registryCvVi: CvRegistry = {
     },
   ],
   projects: [
-    {
-      id: crypto.randomUUID(),
-      role: "Front-end & UI/UX",
-      title: "Website nghe nhạc - Lisicify",
-      github: "https://github.com/ddnmanh/Lisicify",
-      description:
-        "Xây dựng website cho phép nghe nhạc, quản lý playlist, album, tác giả, thể loại.",
-      complemention: "",
-      work_with: "Công nghệ sử dụng: ",
-      stack: "Jira, ReactJS, NodeJS (Express)",
-      date: "02/2024",
-    },
     {
       id: crypto.randomUUID(),
       role: "Front-end",
@@ -126,6 +114,54 @@ export const registryCvVi: CvRegistry = {
       stack:
         "Next.js, Typescript, Mantine UI, Zustand, Tanstack Query, Zod, TailwindCSS",
       date: "03/2025 - nay",
+    },
+    {
+      id: crypto.randomUUID(),
+      company: "Cloudair Solution",
+      locale:
+        "571/25a Phạm Văn Bạch, Phường 15, Quận Tân Bình, TP. Hồ Chí Minh",
+      title: "Lập trình viên FE",
+      description: "Các dự án đã thực hiện:",
+      projects: [
+        {
+          id: crypto.randomUUID(),
+          label: "Quản lý khảo sát (FE)",
+          description:
+            "Ứng dụng cung cấp giao diện quản lý và triển khai biểu mẫu khảo sát, cho phép tạo/lên lịch các phiên khảo sát.",
+        },
+        {
+          id: crypto.randomUUID(),
+          label: "LMS (FE + UI/UX)",
+          description:
+            "Hệ thống quản lý học tập, quản lý học viên, khóa học, giảng viên, lịch học, thư viện",
+        },
+      ],
+      complemention:
+        "Đóng góp thành công cho hơn 5 hệ thống quản lý giáo dục cấp doanh nghiệp. Tích lũy kinh nghiệm thực tế với hệ sinh thái React và các công cụ quản lý state trong môi trường production.",
+      work_with: "Công nghệ sử dụng: ",
+      stack:
+        "React, TypeScript, Redux Toolkit, RTK Query, @measured/puck, Material-UI, Vite, React Router, Formik, i18next",
+      date: "10/2025 - nay",
+    },
+    {
+      id: crypto.randomUUID(),
+      company: "Công ty cổ phần Diggin DIS",
+      locale:
+        "A/99 Đường Nguyễn Thị Thập, Khu dân cư Cityland, Quận 7, TP. Hồ Chí Minh",
+      title: "Lập trình viên BE",
+      description: "Các dự án đã thực hiện:",
+      projects: [
+        {
+          id: crypto.randomUUID(),
+          label: "Dịch vụ bảo hiểm số",
+          description:
+            "Giải pháp trực tuyến tích hợp cho doanh nghiệp, cho phép nhà cung cấp bán bảo hiểm và xử lý bồi thường.",
+        },
+      ],
+      work_with: "Công nghệ sử dụng: ",
+      stack:
+        "Laravel, Redis, MySQL, RESTful API, JWT, Python (Tích hợp AI/ML), FTP/SFTP",
+      date: "12/2025 - nay",
     },
   ],
 };

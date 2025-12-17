@@ -12,7 +12,7 @@ export default function Certificates() {
   const getContent = useLocalizedContent(registryCv);
   const t = useTranslations("curriculum");
   return (
-    <div className='mt-4 h-auto max-w-full print:mt-0'>
+    <div className='mt-4 h-auto w-full print:mt-0'>
       <h1 className='my-0 text-xl font-semibold print:text-lg'>
         {t("certificates")}
       </h1>
@@ -25,7 +25,7 @@ export default function Certificates() {
             <span className='text-muted-foreground text-sm'>{cert.date}</span>
             <strong className='text-sm font-medium'>
               <ExternalLink
-                href={cert.url}
+                href={cert.url || "#"}
                 className='text-primary hover:underline'
               >
                 {cert.name}

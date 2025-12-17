@@ -30,7 +30,7 @@ export default function Project() {
                   <strong>
                     <ExternalLink
                       className='text-primary hover:underline'
-                      href={project.github}
+                      href={project.github || "#"}
                     >
                       {project.title}
                     </ExternalLink>

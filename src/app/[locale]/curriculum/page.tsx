@@ -25,10 +25,12 @@ export default function Curriculum() {
       </div>
 
       <Info />
-      <Education />
-      <Certificate />
-      <Project />
+      <div className='flex flex-col md:flex-row md:space-between flex-1'>
+        <Education />
+        <Certificate />
+      </div>
       <Experiences />
+      <Project />
     </div>
   );
 }
