@@ -12,7 +12,7 @@ export default function Experiences() {
   const getContent = useLocalizedContent(registryCv);
   const t = useTranslations("curriculum");
   return (
-    <div className='mt-6 h-auto max-w-full print:mt-0 print:break-before-page'>
+    <div className='mt-6 h-auto max-w-full print:mt-0'>
       <h1 className='my-0 text-xl font-semibold print:text-lg'>
         {t("experiences")}
       </h1>

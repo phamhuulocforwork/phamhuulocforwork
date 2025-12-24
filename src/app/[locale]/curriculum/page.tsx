@@ -25,7 +25,7 @@ export default function Curriculum() {
       </div>
 
       <Info />
-      <div className='flex flex-col md:flex-row md:space-between flex-1'>
+      <div className='flex flex-col sm:flex-row sm:space-between flex-1'>
         <Education />
         <Certificate />
       </div>

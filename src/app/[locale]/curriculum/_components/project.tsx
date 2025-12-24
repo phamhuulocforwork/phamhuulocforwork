@@ -7,6 +7,7 @@ import { useLocalizedContent } from "@/components/hooks/use-localized-content";
 import type { Project } from "@/types/cv.types";
 
 import { registryCv } from "@/registry";
+
 import { ExternalLink } from "./external-link";
 
 export default function Project() {
